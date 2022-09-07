@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #262626;
+    --color-secondary: #f1f5f9;
+    --color-accent: #f97316;
+    --color-accent-focus: #c2410c;
+    --color-accent-content: #fff7ed;
+    --color-accent2: "#f9a8d4";
+    --font-family-silkscreen: "Silkscreen";
+  }
+  .btn {
+    @apply m-4 bg-primary uppercase font-medium text-secondary px-5 py-3 rounded text-sm;
+  }
+
+  .section-heading {
+    @apply font-bold mt-12;
+  }
+
+  .accent-heading {
+    @apply text-accent font-bold;
+  }
+
+  .navbar-link {
+    @apply m-4 text-secondary font-light text-sm inline-block;
+  }
+
+  .card {
+    @apply p-8 m-8 shadow-2xl text-secondary rounded-lg bg-primary-light;
+  }
+}
