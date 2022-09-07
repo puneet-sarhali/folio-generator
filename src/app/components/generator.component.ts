@@ -5,6 +5,7 @@ import themeData from "../config/theme.json";
 @Component({
   selector: 'app-generator',
   template: `
+    <app-info-form></app-info-form>
     <button class="btn" (click)="onGenerate()">Generate</button>
     <div class="bg-primary">
       <div class="max-w-[75rem] mx-auto">
